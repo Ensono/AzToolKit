@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>aztoolkit</id>
+    <version>$version$</version>
+    <title>AzToolkit</title>
+    <summary>A collection of PowerShell functions for Azure</summary>
+    <description>AzToolkit provides custom Azure functions via a PowerShell module to support using and managing Azure Resources. The module contains useful functions for everyday Azure activities.</description>
+    <tags>azure powershell module functions tools</tags>
+    <authors>Andrew.Waite</authors>
+	<owners>Andrew.Waite</owners>
+    <projectUrl>https://github.com/amido/AzToolkit</projectUrl>
+    <packageSourceUrl>https://github.com/amido/AzToolkit</packageSourceUrl>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+  </metadata>
+  <files>
+    <file src="Src\AzToolkit.psm1" target="Tools" />
+    <file src="Src\AzToolkit.psd1" target="Tools" />
+    <file src="LICENSE*" target="Tools" />
+    <file src="chocolateyInstall.ps1" />
+    <file src="Src\Functions\**\*.*" target="Tools\Functions" exclude="Src\Functions\**\*.Tests.ps1"/>
+  </files>
+</package>
