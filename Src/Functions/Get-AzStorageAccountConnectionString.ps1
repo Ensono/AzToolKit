@@ -1,5 +1,6 @@
 ﻿Function Get-AzStorageAccountConnectionString {
-
+	
+    [CmdletBinding()]
     param (
         [Parameter(Mandatory=$true)]
         [string]$targetName,
