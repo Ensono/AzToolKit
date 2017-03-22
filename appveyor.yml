@@ -4,7 +4,7 @@ clone_folder: C:\Projects\AzToolkit
 
 environment:
  apiKey:
-  secure: LiF10I22QAbmBlNeYnPK732vNbR8PmVfA88ZV/L4yehS0K7fvIveFLnlzKKZe/0i
+  secure: i9cCJhWEZpaDUv3zEUL8p5VKt8B8TcVQe2oWn9LZoRVmklTZIbFcd4khKVSIzoXN
 
 install:
  - cinst -y Pester --version 3.4.0
@@ -31,7 +31,7 @@ after_test:
     # // packaging nusepc file //
     $packageVersion = $(Test-ModuleManifest -Path ".\src\AzToolkit.psd1").Version.ToString()
     choco pack .\AzToolkit.nuspec --version $packageVersion
-    
+
     # // pushing NuGet package to Appveyor //
     Push-AppveyorArtifact (".\AzToolkit.{0}.nupkg" -f $packageVersion)
 
