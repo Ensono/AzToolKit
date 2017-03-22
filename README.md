@@ -1,5 +1,5 @@
 #### Build Status
-Appveyor:</br>[![Build status](https://ci.appveyor.com/api/projects/status/cv8m31fhwj4kekiu?svg=true)](https://ci.appveyor.com/project/waiteandrew/aztoolkit)
+Appveyor:</br>[![Build status](https://ci.appveyor.com/api/projects/status/w1cnyy2ldfooje5t?svg=true)](https://ci.appveyor.com/project/amido/aztoolkit)
 
 **AzToolkit** is published in the [Chocolatey packages community feed](https://chocolatey.org/packages/AzToolkit) and has a dependency on the [Azure Powershell module](https://github.com/Azure/azure-powershell).
 
